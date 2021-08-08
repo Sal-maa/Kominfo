@@ -1,0 +1,54 @@
+package main
+
+import "testing"
+
+var (
+	// persegi          Persegi = Persegi{S: 4}
+	// luasExpected     float64 = 16
+	// kelilingExpected float64 = 16
+
+	pengubah    Pengubah = Pengubah{x: 9, y: 3}
+	addExpected float64  = 12
+	mulExpected float64  = 27
+	divExpected float64  = 3
+)
+
+// func TestLuasPersegi(t *testing.T) {
+// 	t.Logf("Luas persegi : %v", persegi.Luas())
+
+// 	if persegi.Luas() != luasExpected {
+// 		t.Errorf("Salah! Seharusnya : %v", luasExpected)
+// 	}
+// }
+
+// func TestKelilingPersegi(t *testing.T) {
+// 	t.Logf("Keliling persegi : %v", persegi.Keliling())
+
+// 	if persegi.Keliling() != kelilingExpected {
+// 		t.Errorf("Salah! Seharusnya : %v", kelilingExpected)
+// 	}
+// }
+
+func TestAddition(t *testing.T) {
+	t.Logf("Penjumlahan : %v", pengubah.Addition())
+
+	if pengubah.Addition() != addExpected {
+		t.Errorf("Salah! Seharusnya : %v", addExpected)
+	}
+}
+
+func TestMultiple(t *testing.T) {
+	t.Logf("Perkalian : %v", pengubah.Multiple())
+
+	if pengubah.Multiple() != mulExpected {
+		t.Errorf("Salah! Seharusnya : %v", mulExpected)
+	}
+}
+
+func TestDivide(t *testing.T) {
+	t.Logf("Pembagian : %v", pengubah.Divide())
+
+	if pengubah.Divide() != divExpected {
+		t.Errorf("Salah! Seharusnya : %v", divExpected)
+	}
+}
