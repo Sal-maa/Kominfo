@@ -1,0 +1,54 @@
+// package main
+// import(
+//         "fmt"
+//         "math/rand"
+//         "math
+//      )
+//func main {
+  // randomize
+	// rand.Seed(3)
+	// fmt.Println("nomor favorit saya 1:", rand.Int())
+	// fmt.Println("nomor favorit saya 2:", rand.Int())
+	// fmt.Println("nomor favorit saya 3:", rand.Int())
+	// fmt.Println("nomor favorit saya 4:", rand.Int())
+	// fmt.Println("nomor favorit saya 5:", rand.Int())
+
+	// print variable in oneline
+	// i, j := 1, 2
+	// var c, phython, java string
+	// c, phython, java = "True", "False", "no!"
+
+	// fmt.Println(i, j, c, phython, java)
+
+	// counting squareroot
+	// x := float64(3)
+	// y := float64(4)
+	// //z := math.Sqrt(x)
+	// //u := math.Sqrt(y)
+	// z := math.Pow(x, float64(2))
+	// u := math.Pow(y, float64(2))
+	// //hasil := math.Sqrt(math.Pow(z, 2), math.Pow(u, 2))
+	// hasil2 := math.Sqrt(z + u)
+
+	// fmt.Println(z, u)
+	// fmt.Println(hasil2)
+
+	// i := 42
+	// f := 3.142
+	// g := 0.867 + 0.51
+	// fmt.Printf("%T", i)
+	// fmt.Printf("%T", f)
+	// fmt.Printf("%T", g)
+
+	// i, j := 42, 2701
+	// p := &i				// tanda & untuk mengambil nilai pointer dari variabel
+
+	// fmt.Println(*p)  // tanda * untuk mengambil nilai asli pointer
+
+	// *p = 21
+	// fmt.Println(i)
+
+	// p = &j
+	// j = (*p / 37)
+	// fmt.Println(j)
+//}
