@@ -1,0 +1,84 @@
+// package main
+
+// import (
+	// "fmt"
+	// "math"
+// )
+
+// func main() {
+  //array statis
+
+	//var score [3]int = [3]int{40, 50, 60} //array of 3 integer
+
+	// fmt.Println(score)      //print isi array
+	// fmt.Println(score[0])   //print the first element
+	// fmt.Println(len(score)) //print the last element
+
+	// for i := 0; i < len(score); i++ {
+	// 	fmt.Println(score[i])
+	// }
+
+	// for _, value := range score {
+	// 	fmt.Println(value)
+	// }
+
+	//array dinamis
+	//var count []int
+	// count = append(count, "1")
+	// count = append(count, "2")
+	// count = append(count, 124)
+	// fmt.Println(count)
+
+	// for i := 0; i < 10; i++ {
+	// 	count = append(count, i)
+	// }
+	// fmt.Println(count)
+
+	// var buah [4]string = [4]string{"semangka", "pisang", "apel", "belimbing"}
+	// var fruits []string
+
+	// for _, value := range buah {
+	// 	fruits = append(fruits, value)
+	// }
+	// fmt.Println(fruits)
+	// fmt.Println(len(fruits))
+
+	// ages := make(map[string]int)
+	// ages["charlie"] = 27
+	// ages["dion"] = 25
+	// ages["salma"] = 22
+	// fmt.Println(ages)
+
+	// for key, value := range ages {
+	// 	fmt.Println("Key:", key, "Value:", value)
+	// }
+
+	// sort.IntSlice(ages)
+
+	// var arrPerson []Person
+	// arrPerson = append(arrPerson, Person{
+	// 	name:    "Fresly",
+	// 	age:     23,
+	// 	address: "Medan",
+	// })
+	// fmt.Println(arrPerson)
+
+	// mengambil object dalam array
+	// var person Person
+	// person.name = "Salma"
+	// person.age = 23
+	// person.address = "Makassar"
+	// fmt.Println(person.name) // print object name
+
+	// var arrEmployee []Employee
+	// arrEmployee = append(arrEmployee, Employee{
+	// 	name:     "Tama",
+	// 	address:  "maple street",
+	// 	position: "CFO",
+	// })
+	// fmt.Println(arrEmployee)
+
+	// for key, value :=value range arrEmployee{
+	// 	fmt.Println(value.position)
+	// }
+//}
