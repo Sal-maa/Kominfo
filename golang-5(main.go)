@@ -1,0 +1,103 @@
+package main
+
+import (
+	"fmt"
+)
+
+// type BangunDatar interface {
+// 	Luas()
+// 	Keliling()
+// }
+
+// type Persegi struct {
+// 	S float64
+// }
+
+// type PersegiPanjang struct {
+// 	panjang float64
+// 	lebar   float64
+// }
+
+// type Lingkaran struct {
+// 	Radius float64
+// }
+
+// func (p Persegi) Luas() float64 {
+// 	return p.S * p.S
+// }
+
+// func (p Persegi) Keliling() float64 {
+// 	return 4 * p.S
+// }
+
+// func (pp PersegiPanjang) Luas() float64 {
+// 	return pp.panjang * pp.lebar
+// }
+
+// func (pp PersegiPanjang) Keliling() float64 {
+// 	return 2 * (pp.panjang + pp.lebar)
+// }
+
+// func (j Lingkaran) Luas() float64 {
+// 	return math.Phi * j.Radius
+// }
+
+// func (j Lingkaran) Keliling() float64 {
+// 	return 2 * math.Pi * j.Radius
+// }
+
+// func hitungPersegi(p Persegi) {
+// 	fmt.Println("Keliling persegi=", p.Keliling())
+// 	fmt.Println("Luas persegi=", p.Luas())
+// }
+
+// func hitungPersegiPanjang(pp PersegiPanjang) {
+// 	fmt.Println("Keliling persegi panjang=", pp.Keliling())
+// 	fmt.Println("Luas persegi panjang=", pp.Luas())
+// }
+
+// func hitungLingkaran(j Lingkaran) {
+// 	fmt.Println("Keliling lingkaran=", j.Keliling())
+// 	fmt.Println("Luas lingkaran=", j.Luas())
+// }
+
+type Pipolando interface {
+	Multiple()
+	Divide()
+	Addition()
+	Modulo()
+	Squareroot()
+}
+
+type Pengubah struct {
+	x float64
+	y float64
+}
+
+func (a Pengubah) Addition() float64 {
+	return a.x + a.y
+}
+
+func (m Pengubah) Multiple() float64 {
+	return m.x * m.y
+}
+
+func (d Pengubah) Divide() float64 {
+	return d.x / d.y
+}
+
+func hitungPenjumalahn(a Pengubah) {
+	fmt.Println("Hasil=", a.Addition())
+}
+func hitungPerkalian(m Pengubah) {
+	fmt.Println("Hasil=", m.Multiple())
+}
+func main() {
+
+	// hitungPersegi(Persegi{S: 9})
+	// hitungPersegiPanjang(PersegiPanjang{panjang: 2, lebar: 9})
+	// hitungLingkaran(Lingkaran{Radius: 3.5})
+
+	hitungPenjumalahn(Pengubah{x: 12, y: 3})
+	hitungPerkalian(Pengubah{x: 12, y: 3})
+}
