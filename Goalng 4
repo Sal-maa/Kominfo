@@ -1,0 +1,162 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+// type Person struct {
+// 	name    string
+// 	age     int
+// 	address string
+// }
+
+// type Employee struct {
+// 	name     string
+// 	address  string
+// 	position string
+// }
+
+// func ShowName(name string) string {
+// 	return name
+// }
+
+// func add(x int, y int) int {
+// 	return x + y
+// }
+
+// func addition(x int, y int) {
+// 	fmt.Println(x + y)
+// }
+
+// func multiple(x int, y int) {
+// 	fmt.Println(x * y)
+// }
+
+// func divide(x float64, y float64) {
+// 	fmt.Println(x / y)
+// }
+
+// func modulo(x int, y int) {
+// 	fmt.Println(x % y)
+// }
+
+// func akarkuadrat(x float64, y float64) {
+// 	fmt.Println(math.Sqrt(math.Pow(x, 2) + math.Pow(y, 2)))
+// }
+
+// type Persegi struct {
+// 	Sisi float64
+// }
+
+// //traditional function
+// func Luas(sisi Persegi) float64 {
+// 	return sisi.Sisi * sisi.Sisi
+// }
+
+// //Method with receiver param
+// func (s Persegi) Luas() float64 {
+// 	return s.Sisi * s.Sisi
+// }
+
+// type PersegiPanjang struct {
+// 	panjang float64
+// 	lebar   float64
+// }
+
+// func (p PersegiPanjang) Luas() float64 {
+// 	return p.panjang * p.lebar
+// }
+
+// func (p PersegiPanjang) Keliling() float64 {
+// 	return 2 * (p.panjang + p.lebar)
+// }
+
+// type Lingkaran struct {
+// 	radius float64
+// }
+
+// func (j Lingkaran) Luas() float64 {
+// 	return math.Pi * j.radius * j.radius
+// }
+
+// type BangunDatar interface {
+// 	Luas()
+// 	Keliling()
+// }
+
+// type Persegi struct {
+// 	S float64
+// }
+
+// type PersegiPanjang struct {
+// 	panjang float64
+// 	lebar   float64
+// }
+
+// type Lingkaran struct {
+// 	Radius float64
+// }
+
+// func (p Persegi) Luas() float64 {
+// 	return p.S * p.S
+// }
+
+// func (p Persegi) Keliling() float64 {
+// 	return 4 * p.S
+// }
+
+// func (pp PersegiPanjang) Luas() float64 {
+// 	return pp.panjang * pp.lebar
+// }
+
+// func (pp PersegiPanjang) Keliling() float64 {
+// 	return 2 * (pp.panjang + pp.lebar)
+// }
+
+// func (j Lingkaran) Luas() float64 {
+// 	return math.Phi * j.Radius
+// }
+
+// func (j Lingkaran) Keliling() float64 {
+// 	return 2 * math.Pi * j.Radius
+// }
+
+// func hitungPersegi(p Persegi) {
+// 	fmt.Println("Keliling persegi=", p.Keliling())
+// 	fmt.Println("Luas persegi=", p.Luas())
+// }
+
+// func hitungPersegiPanjang(pp PersegiPanjang) {
+// 	fmt.Println("Keliling persegi panjang=", pp.Keliling())
+// 	fmt.Println("Luas persegi panjang=", pp.Luas())
+// }
+
+// func hitungLingkaran(j Lingkaran) {
+// 	fmt.Println("Keliling lingkaran=", j.Keliling())
+// 	fmt.Println("Luas lingkaran=", j.Luas())
+// }
+// func main() {
+
+	// hitungPersegi(Persegi{S: 9})
+	// hitungPersegiPanjang(PersegiPanjang{panjang: 2, lebar: 9})
+	// hitungLingkaran(Lingkaran{Radius: 3.5})
+	// fmt.Println(ShowName("Amelia"))
+	// fmt.Println(add(4, 5))
+	// addition(5, 6)
+	// multiple(4, 7)
+	// divide(9, 4)
+	// modulo(9, 3)
+	// akarkuadrat(9, 12)
+
+	// persegi1 := Persegi{6}
+	// fmt.Println(Luas(persegi1))
+	// fmt.Println(persegi1.Luas())
+
+	// p := PersegiPanjang{panjang: 7, lebar: 8}
+	// fmt.Println("Luas =", p.Luas())
+	// fmt.Println("Keliling =", p.Keliling())
+
+	// j := Lingkaran{4}
+	// fmt.Println("Luas lingkaran=", j.Luas())
+// }
