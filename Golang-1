@@ -1,0 +1,69 @@
+// package main
+// import "fmt"
+// func main {
+  // fmt.Println("Hello World!")
+	// fmt.Println("Hai, aku salmaa")
+
+	// var name string = "Sandy"
+	// fmt.Println("Nama saya ", name)
+	// fmt.Println("Nama saya " + name)
+
+	// var age int = 20
+	// fmt.Println("Umur saya:", age)
+	// fmt.Printf("Umur saya: %v", age)
+
+	//kedua fungsi print menampilkan hal yang sama hanya saja printf menggunakan kode %v untuk menyatakan nilai
+	//printf digunakan untuk memformat sesuatu
+
+	// var isPredicate bool = false
+	// fmt.Println(isPredicate)
+
+	// count := 34 //shorthand variabel
+
+	//artist := "blackpink"
+
+	// if artist == "Blackpink" {
+	// 	fmt.Println("Korea")
+	// } else {
+	// 	fmt.Println("Other country")
+	// }
+
+	// 	switch expression
+	// case condotion :
+
+	// switch artist {
+	// case "Blackpink":
+	// 	fmt.Println()
+	// 	break
+	// }
+
+	//looping 0-9
+	// for i := 1; i < 10; i++ {
+	// 	fmt.Println(i)
+	// }
+
+	//infinity loop
+	// for {
+	// 	fmt.Println()
+	// }
+
+	//looping bernilai
+	// array:=["apple","mango"]
+	// for i,v := range array{
+
+	// }
+
+	//looping penjumlahan
+	// sum := 0
+	// for sum < 20 {
+	// 	sum += sum
+	// }
+	// fmt.Println(sum)
+
+	// pointer dan nilai asli
+	// number := 15
+	// pointerNumber := &number //membentuk nilai pointer pada variable atau alamat data
+	// fmt.Println(pointerNumber) //* membentuk nilai asli dari pointer
+	// fmt.Println(*pointerNumber)
+
+// }
