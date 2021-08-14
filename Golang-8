@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
 // //hands on1
 // import (
 // 	"fmt"
@@ -25,7 +31,7 @@ package main
 
 // func myfunc(ch chan int) {
 // 	fmt.Println(234 + <-ch)
-// }
+//}
 
 // func main() {
 // 	fmt.Println("start Main method")
@@ -34,4 +40,39 @@ package main
 // 	go myfunc(ch)
 // 	ch <- 23
 // 	fmt.Println("End Main method")
+
+// 	ch2 := make(chan string, 2)
+
+// 	ch2 <- "Hello"
+// 	ch2 <- "Goroutine"
+
+// 	msgFirst := <-ch2
+// 	msgLast := <-ch2
+// 	fmt.Println(msgFirst)
+// 	fmt.Println(msgLast)
 // }
+
+//hands on 3
+func showLastName(name string, wg *sync.WaitGroup) {
+
+	defer wg.Done()
+
+	fmt.Println("Worker is starting..")
+	fmt.Println("My name is : ", name)
+	time.Sleep(100 * time.Millisecond)
+
+	fmt.Println("Worker is done..")
+}
+
+func main() {
+	// Spawn goroutine sejumlah 10 item
+	// Handle spawning goroutine using WaitGroup
+	var wg sync.WaitGroup
+
+	for i := 1; i <= 10; i++ {
+		wg.Add(1)
+		go showLastName("Salmaa", &wg)
+	}
+
+	wg.Wait()
+}
