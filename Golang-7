@@ -1,0 +1,99 @@
+package main
+
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+// f() // memanggil f(); menunggu untuk return
+// go f() // meng-create goroutine baru yang memanggil f(); jangan tunggu
+
+// func f(from string) {
+// 	for i := 0; i < 3; i++ {
+// 		fmt.Println(from, ":", i)
+// 	}
+// }
+
+// func ShowName(name string) {
+// 	fmt.Println("My name is :", name)
+// }
+
+// func SendEmail(email string) {
+// 	fmt.Println("Send to :", email)
+// }
+
+// func ShowName(name string, wg *sync.WaitGroup) {
+
+// 	defer wg.Done()
+
+// 	fmt.Println("ShowName is starting..")
+// 	fmt.Println("My name is :", name)
+// 	time.Sleep(time.Second)
+
+// 	fmt.Println("ShowName is done")
+}
+func main() {
+	// ShowName("Salmaa1") //traditional method call
+
+	// go ShowName("Salmaa2") //goroutine method call; hasil tidak akan muncul karena proses berada dalam goroutine
+	// go ShowName("Salmaa3")
+	// time.Sleep(1 * time.Second) // untuk menunjukkan hasil yang diproses go routine
+
+	// SendEmail("abc@email.com")
+
+	// go SendEmail("def@email.com")
+	// time.Sleep(2 * time.Second)
+
+	// 	f("direct")
+
+	// 	go f("goroutine")
+
+	// 	go func(msg string) {
+	// 		fmt.Println(msg)
+	// 	}("going")
+
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("done")
+
+	// channel := make(chan int)
+
+	// //goroutine func
+	// go func() {
+	// 	channel <- 56
+	// 	// channel <=78
+	// }()
+	// result := <-channel
+	// fmt.Println(result)
+
+	// time.Sleep(1 * time.Second)
+
+	//buffer dapat digunakan beberapa proses sekaligus
+
+	channel := make(chan string, 2)
+
+	//goroutine func
+	go func() {
+		channel <- "Halo"
+	}()
+
+	go func() {
+		channel <- "massage"
+	}()
+
+	result1 := <-channel
+	result2 := <-channel
+	fmt.Println(result1)
+	fmt.Println(result2)
+
+	time.Sleep(1 * time.Second)
+
+	var wg sync.WaitGroup
+
+	for i := 1; i <= 5; i++ {
+		wg.Add(1)
+		go ShowName("Salmaa", &wg)
+	}
+
+	wg.Wait()
+}
