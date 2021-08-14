@@ -34,7 +34,7 @@ import (
 // 	fmt.Println("ShowName is done")
 }
 func main() {
-	// ShowName("Salmaa1") //traditional method call
+	// ShowName("Salmaa1") //traditional method call ; blocking
 
 	// go ShowName("Salmaa2") //goroutine method call; hasil tidak akan muncul karena proses berada dalam goroutine
 	// go ShowName("Salmaa3")
@@ -72,7 +72,7 @@ func main() {
 
 	channel := make(chan string, 2)
 
-	//goroutine func
+	//goroutine func adalah method dari goroutine bukan method milik author sehingga execute berada di background(non blocking)
 	go func() {
 		channel <- "Halo"
 	}()
